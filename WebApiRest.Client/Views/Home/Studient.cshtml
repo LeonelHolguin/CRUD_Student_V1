@@ -1,0 +1,44 @@
+﻿@model WebApiRest.Shared.StudientDTO
+
+@{
+    ViewData["Title"] = "Studient";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        @ViewBag.action
+    </div>
+    <div class="card-body">
+        <form asp-action="SaveChanges" asp-controller="Home" method="post">
+            
+            <input asp-for="IdStudent" type="hidden"/>
+            <input asp-for="RegisterDate" type="hidden" />
+
+            <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control form-control-sm" asp-for="FirstName"/>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control form-control-sm" asp-for="LastName" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Admission Date</label>
+                <input type="date" class="form-control form-control-sm" asp-for="AdmissionDate" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Career</label>
+                <input type="text" class="form-control form-control-sm" asp-for="Career" />
+            </div>
+
+            <button type="submit" class="btn btn-success">Save</button>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Cancel</a>
+
+        </form>
+    </div>
+</div>
+

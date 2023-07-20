@@ -1,0 +1,47 @@
+﻿@model List<WebApiRest.Shared.StudientDTO>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Studients List
+    </div>
+    <div class="card-body">
+        <a asp-action="Studient" asp-controller="Home" asp-route-idStudient="0" class="btn btn-success">New Studient</a>
+        <hr />
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Admission Date</th>
+                    <th>Career</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@(String.Format("{0:dd/MM/yyyy}", item.AdmissionDate))</td>
+                        <td>@item.Career</td>
+                        <td>
+                            <a asp-action="Studient" asp-controller="Home" asp-route-idStudient="@item.IdStudent" class="btn btn-primary">Edit</a>
+                            <a asp-action="DeleteStudient" asp-controller="Home" asp-route-idStudient="@item.IdStudent" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

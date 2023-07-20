@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRest.Server", "WebApiRest\WebApiRest.Server.csproj", "{CBFCE1DE-429F-4F5A-B71D-6A535537CF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRest.Shared", "WebApiRest.Shared\WebApiRest.Shared.csproj", "{89D6CEB0-3DF1-40E1-BE79-87A5DF1608BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRest.Client", "WebApiRest.Client\WebApiRest.Client.csproj", "{AD13CD7F-99C6-4113-9BFF-C53A71AA56C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBFCE1DE-429F-4F5A-B71D-6A535537CF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFCE1DE-429F-4F5A-B71D-6A535537CF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFCE1DE-429F-4F5A-B71D-6A535537CF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFCE1DE-429F-4F5A-B71D-6A535537CF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D6CEB0-3DF1-40E1-BE79-87A5DF1608BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D6CEB0-3DF1-40E1-BE79-87A5DF1608BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D6CEB0-3DF1-40E1-BE79-87A5DF1608BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D6CEB0-3DF1-40E1-BE79-87A5DF1608BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD13CD7F-99C6-4113-9BFF-C53A71AA56C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD13CD7F-99C6-4113-9BFF-C53A71AA56C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD13CD7F-99C6-4113-9BFF-C53A71AA56C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD13CD7F-99C6-4113-9BFF-C53A71AA56C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8C751BE-B99D-410D-BFE5-8635483FCB16}
+	EndGlobalSection
+EndGlobal
